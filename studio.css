@@ -280,27 +280,97 @@ button{
 }
 
 /* FOOTER */
-
 #footer{
   display: grid;
-  margin-top: 20%;
-  height: 500px;
-  background-color: rgba(10, 22, 42, 1) ;
-
-  
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: auto;
+  min-height: 200px;
+  padding: 50px 40px;
+  margin-top: 200px;
+  background-color: rgba(10, 22, 42, 1);
 }
 
-
-#footer .foot1{
+#footer section p,
+#footer section a{
   color: rgba(255, 255, 255, 0.85);
-  
-  
 }
-.bgv{
-  position: absolute;
- 
+
+#footer .contact{
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.about-text{
+  text-align: justify;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-right: 40px;
+}
+#footer p{
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.link-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 2px;
+  padding: 0;
+}
+
+.link-grid li{
+  list-style: none;
+}
+
+.link-grid a{
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link-grid a:hover{
+  color: rgb(197, 147, 20); /* matches your existing gold accent color */
+}
+
+.social-icons{
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.fab{
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover .fab{
+  color: rgb(197, 147, 20);
+}
+
+
+/* COPYRIGHT SECTION */
+
+.copyright{
+background-color: rgba(10, 22, 42, 1);
+color: rgba(255, 255, 255, 0.85);
+  width: 100%;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
- 
+  padding: 20px 0;
 }
+
+
+/* @media (max-width: 900px){
+  #footer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px){
+  #footer{
+    grid-template-columns: 1fr;
+  }
+} */
