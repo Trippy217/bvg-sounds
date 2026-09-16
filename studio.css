@@ -470,6 +470,9 @@ color: rgba(255, 255, 255, 0.85);
     .about-section{
         max-width: 1100px;
     }
+    #hero .text{
+        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
+    }
 }
 
 /* Standard desktops / laptops */
@@ -479,7 +482,7 @@ color: rgba(255, 255, 255, 0.85);
         max-width: 900px;
     }
     #hero .text{
-        font-size: 110px;
+        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
     }
 }
 
@@ -537,7 +540,7 @@ color: rgba(255, 255, 255, 0.85);
     #hero .text{
       position: absolute;
         opacity: 0.5;
-        font-size: 80px;
+        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
         top: 40%;
         left: 20%;
     }
@@ -643,7 +646,7 @@ color: rgba(255, 255, 255, 0.85);
     #hero .text{
       position: absolute;
         opacity: 0.5;
-        font-size: 80px;
+        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
         top: 40%;
         left: 20%;
     }
@@ -752,7 +755,7 @@ color: rgba(255, 255, 255, 0.85);
     #hero .text{
       position: absolute;
         opacity: 0.5;
-        font-size: clamp(2.8rem, 10vw, 3.5rem);
+        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
         top: 40%;
         left: 12%;
             
@@ -852,7 +855,7 @@ color: rgba(255, 255, 255, 0.85);
     #hero .text{
       position: absolute;
         opacity: 0.5;
-        font-size:clamp(2.8rem, 10vw, 3.5rem)  ;
+        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem)  ;
         top: 40%;
         left: 6%;
     }
