@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* navbar */
+nav,.nav{
+    height: 50px;
+    background-color: rgba(10, 22, 42, 1) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0px;
+
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  
+}
+.navb a{
+  color:azure ;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-underline-offset 0.3s ease, text-decoration-color 0.3s ease;
+
+}
+.navb a:hover{
+    color:rgb(207, 222, 222) ;
+    text-underline-offset: 6px;
+  text-decoration-color: currentColor;
+    
+}
+.navlogo a{
+  color:azure ;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-underline-offset 0.3s ease, text-decoration-color 0.3s ease;
+
+}
+.navlogo a:hover{
+    color:rgb(207, 222, 222) ;
+    text-underline-offset: 6px;
+  text-decoration-color: currentColor;
+    
+}
+
+.nav-links a{
+  color:azure ;
+  text-underline-offset: 2px;
+  text-decoration-color: transparent;
+  transition: text-underline-offset 0.3s ease, text-decoration-color 0.3s ease;
+
+}
+.nav-links a:hover{
+    color:rgb(207, 222, 222) ;
+    text-underline-offset: 6px;
+  text-decoration-color: currentColor;
+    
+}
+
+#hero .text{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    opacity: 0.5;
+    z-index: 5;
+    font-size: 12px;
+    color: white;
+}
+.sess{
+    text-decoration: none;
+    color:azure ;
+    padding: 2px;
+    background-color: rgb(197, 147, 20);
+    border: 2px solid rgb(197, 147, 20);
+}
+.sess:hover{
+    background-color:rgb(181, 134, 13) ;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;     
+  z-index: 1000;
+}
+button{
+  height: 40px;
+  width: 110px;
+  border-radius: 10px;
+}
+
+
+.nav-toggle{
+    display: none;
+}
+
+/* Hamburger icon */
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.nav-toggle:checked ~ .hamburger span:nth-child(1){
+    transform: translateY(8.5px) rotate(45deg);
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(2){
+    opacity: 0;
+}
+.nav-toggle:checked ~ .hamburger span:nth-child(3){
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px){
+    .hamburger{
+        display: flex;
+    }
+
+    .navb{
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        background-color: rgba(10, 22, 42, 1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .navb li{
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+ 
+    .nav-toggle:checked ~ .navb{
+        max-height: 400px; 
+    }
+}
+
+
