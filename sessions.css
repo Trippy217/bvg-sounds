@@ -219,9 +219,30 @@ button{
         text-align: center;
         padding: 15px 0;
     }
-
-    
+ 
     .nav-toggle:checked ~ .navb{
         max-height: 400px; 
     }
+}
+   /* Hero Section */
+ /* hero section */
+#hero{
+  position: relative;
+  margin-top: 60px;  
+  height: 400px;
+  z-index: 1;
+  background: url(IMG_04.JPG.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  text-align: center;
+  font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
+  opacity: 0.5;
 }
