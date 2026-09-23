@@ -50,52 +50,70 @@
       <p class="text"> GET IN TOUCH   </p> 
     </div>
 
-    <div id="contact-info">
-        
-       <section class="contact-section">
-            
+    <section class="contact-section">
+
+    <!-- Contact Information -->
+    <section id="contact-info">
+
         <h2>Contact Information</h2>
+
         <p>Email: info@bvg.com</p>
         <p>Phone: +1 (123) 456-7890</p>
         <p>Address: 123 Music Street, Sound City</p>
-       </section>
 
-        <section class="social-icons">
-            <a href="https://www.facebook.com/BGV-Sounds-123456789" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/BGV_Sounds" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/BGV_Sounds/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/bgv-sounds/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-        </section>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
 
-       
-    </div>
-    <div class="contact-form">
-         <section>
-            <h2>Send Us a Message</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+    </section>
 
-                <label for="email" >Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email address"><br>
-                <select name="subject" id="subject">
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="booking">Booking Request</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="support">Support</option>
-                </select><br>
-                <label for="message" class="message">Message:</label>
-                <textarea id="message" name="message" rows="5" cols="30" placeholder="Tell us about your project" required></textarea>
-                <br>
 
-                <button type="submit" class="button">Submit</button>
-            </form>
+    <!-- Contact Form -->
+    <form class="contact-form">
 
-        </section>
-    </div>
+        <h2>Send Us a Message</h2>
+
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+        >
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+        >
+
+        <label for="service">Service:</label>
+        <select id="service" name="service">
+            <option value="">Select a service</option>
+            <option value="recording">Recording</option>
+            <option value="mixing">Mixing</option>
+            <option value="mastering">Mastering</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us about your project"
+        ></textarea>
+
+        <button type="submit" class="button">
+            Submit
+        </button>
+
+    </form>
+
+</section>
 
     <footer>
         <div id="footer">
