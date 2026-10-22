@@ -124,15 +124,6 @@ ul li{
     
 }
 
-#hero .text{
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    opacity: 0.5;
-    z-index: 5;
-    font-size: 12px;
-    color: white;
-}
 .sess{
     text-decoration: none;
     color:azure ;
@@ -236,6 +227,8 @@ button{
   background-size: cover;
 }
 
+/* Base hero text rule — this single rule now handles every breakpoint.
+   font-size uses clamp() so it scales smoothly with no gaps between widths. */
 #hero .text{
   position: absolute;
   width: 100%;
@@ -246,6 +239,7 @@ button{
   text-align: center;
   font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
   opacity: 0.5;
+  z-index: 5;
 }
 
 
@@ -454,13 +448,6 @@ button{
 .badge-green{ background-color: #0B4A1F; }
 .badge-amber{ background-color: #dd9d07; color: rgba(10, 22, 42, 1); }
 .badge-coral{ background-color: #E4572E; }
-
-@media (max-width: 700px){
-    .pricing-grid{
-        grid-template-columns: 1fr;
-    }
-}
-
 
 
 /* How Booking Works */
@@ -671,36 +658,11 @@ color: rgba(255, 255, 255, 0.85);
 }
 
 
-
-
-
- /* @media (max-width: 800px){
-    .gallery-faq{
-        grid-template-columns: 1fr;
-    }
-    .gallery-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 600px){
-    .steps-row{
-        flex-direction: column;
-    }
-    .step-connector{
-        width: 2px;
-        height: 30px;
-        margin-bottom: 0;
-    }
-} */
-
-
  /* Large desktops / high-res monitors */
-@media (max-width: 1536px){  .about-wrapper,
+@media (max-width: 1536px){
+    .about-wrapper,
     .about-section{
         max-width: 1100px;
-    }
-    #hero .text{
-        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
     }
 }
 
@@ -709,9 +671,6 @@ color: rgba(255, 255, 255, 0.85);
     .about-wrapper,
     .about-section{
         max-width: 900px;
-    }
-    #hero .text{
-        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
     }
 }
 
@@ -745,7 +704,6 @@ color: rgba(255, 255, 255, 0.85);
         width: 100%;
         text-align: center;
         padding: 15px 0;
-        ;
     }
 
     .nav-links a{
@@ -766,13 +724,7 @@ color: rgba(255, 255, 255, 0.85);
         height: 300px;
         width: 100%;
     }
-    #hero .text{
-      position: absolute;
-        opacity: 0.5;
-        font-size: clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
-        top: 40%;
-        left: 20%;
-    }
+
 /* about */
    .about-wrapper{
     max-width: 768px;
@@ -851,7 +803,6 @@ color: rgba(255, 255, 255, 0.85);
         width: 100%;
         text-align: center;
         padding: 15px 0;
-        ;
     }
 
     .nav-links a{
@@ -872,13 +823,7 @@ color: rgba(255, 255, 255, 0.85);
         height: 300px;
         width: 100%;
     }
-    #hero .text{
-      position: absolute;
-        opacity: 0.5;
-        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
-        top: 40%;
-        left: 20%;
-    }
+
 /* about */
    .about-wrapper{
     max-width: 768px;
@@ -925,6 +870,19 @@ color: rgba(255, 255, 255, 0.85);
     grid-template-columns:repeat(2,1fr);
     gap: 20px;
   }
+
+  /* pricing */
+  .pricing-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* gallery + faq */
+  .gallery-faq{
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
   
  }
 
@@ -960,7 +918,6 @@ color: rgba(255, 255, 255, 0.85);
         width: 100%;
         text-align: center;
         padding: 15px 0;
-        ;
     }
 
     .nav-links a{
@@ -981,14 +938,7 @@ color: rgba(255, 255, 255, 0.85);
         height: 300px;
         width: 100%;
     }
-    #hero .text{
-      position: absolute;
-        opacity: 0.5;
-        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem);
-        top: 40%;
-        left: 12%;
-            
-    }
+
     /* about */
     #about{
       width: 100%;
@@ -1015,6 +965,16 @@ color: rgba(255, 255, 255, 0.85);
   .strength .specifics{
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  /* booking steps */
+  .steps-row{
+    flex-direction: column;
+  }
+  .step-connector{
+    width: 2px;
+    height: 30px;
+    margin-bottom: 0;
   }
 
   /* footer */
@@ -1060,7 +1020,6 @@ color: rgba(255, 255, 255, 0.85);
         width: 100%;
         text-align: center;
         padding: 15px 0;
-        ;
     }
 
     .nav-links a{
@@ -1081,22 +1040,8 @@ color: rgba(255, 255, 255, 0.85);
         height: 300px;
         width: 100%;
     }
-    #hero .text{
-      position: absolute;
-        opacity: 0.5;
-        font-size:clamp(2.5rem, 0.83rem + 7.12vw, 9.375rem)  ;
-        top: 40%;
-        left: 6%;
-    }
 
     /* about */
-    #about{
-      width: 100%;
-  }
-   /* about */
-    #about{
-      width: 100%;
-  }
   .about-section{
     display: flex;
     flex-direction: column;
