@@ -20,15 +20,14 @@ A multi-page website for BGV Sounds, a full-service audio house offering recordi
 ## Built with
 - HTML
 - CSS
-- [ADD JavaScript only if used]
 - Deployed on Vercel
 
 ## Run locally
-1. Clone the repo: `git clone [YOUR REPO URL]`
-2. Open `index.html` in your browser [CONFIRM filename]
+
+ Open `index.html` in your browser [CONFIRM filename]
 
 ## Status
-[CHOOSE ONE: Built for the client BGV Sounds / Concept project]
+ Built for the client BGV Sounds
 
 ## Author
 Garuba Gideon Godwin
