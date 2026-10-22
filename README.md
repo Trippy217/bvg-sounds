@@ -4,7 +4,7 @@ A multi-page website for BGV Sounds, a full-service audio house offering recordi
 
 **Live site:** https://bvg-studio.vercel.app
 
-![Homepage screenshot](screenshot.png) <!-- ADD a screenshot to the repo -->
+
 
 ## Pages
 - **Home:** introduces the studio and its services
@@ -35,4 +35,4 @@ Garuba Gideon Godwin
 [LinkedIn](https://www.linkedin.com/in/gideon-garuba-727222411/) | garubagideon900@gmail.com
 
 ## Licence
-[ADD: MIT Licence, or "All rights reserved"]
+All rights reserved
